@@ -1,4 +1,4 @@
-# Cookiecutter Templates
+# Cookiecutter Python Template
 
 ## Prerequisites
 
