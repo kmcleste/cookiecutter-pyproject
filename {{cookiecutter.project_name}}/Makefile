@@ -1,21 +1,23 @@
 setup:
+	@if [ ! -d ".git" ]; then \
+		git init; \
+	fi
 	poetry install
 	poetry run pre-commit install
-	poetry shell
 
 black:
 	poetry run black .
 
 bandit:
-	poetry run bandit -c pyproject.toml -r oracle_of_ammon/
+	poetry run bandit -c pyproject.toml -r {{cookiecutter.project_slug}}/
 
 test:
 	poetry run pytest
 
-cicd: black bandit test
-
 pre-commit:
 	poetry run pre-commit run --all-files
+
+cicd: pre-commit test
 
 serve:
 	poetry run mkdocs serve

@@ -1,5 +1,12 @@
 {
-    "project": "project",
-    "project_slug": "{{cookiecutter.project.lower().replace('-', '_').replace(' ', '_')}}",
+    "full_name": "Kyle McLester",
+    "email": "kyle.mclester@example.com",
+    "github_username": "kmcleste",
+    "project_name": "Python Boilerplate",
+    "project_slug": "{{cookiecutter.project_name.lower().replace('-', '_').replace(' ', '_')}}",
+    "project_short_description": "A short project description.",
+    "pypi_username": "{{cookiecutter.github_username}}",
+    "version": "0.1.0",
+    "open_source_license": ["MIT license", "BSD license", "ISC license", "Apache Software License 2.0", "GNU General Public License v3", "Not open source"],
     "_copy_without_render": [".github/*"]
 }
