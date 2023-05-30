@@ -1,9 +1,10 @@
 # Cookiecutter Templates
 
-## Pre-Requisites
+## Prerequisites
 
 - Python >3.8, <3.11
-- Poetry
+- Cookiecutter ^2.1.1
+- Poetry ^1.3.1
 
 ## Usage
 
